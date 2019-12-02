@@ -1,0 +1,55 @@
+.bigbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.call:first-child {
+    text-align: center;
+}
+
+.call:not(:first-child) {
+    height: 40px;
+    margin: 10px 0;
+}
+
+.call .tou {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+.call>input[type="text"] {
+    /* border: 0; */
+    box-sizing: border-box;
+    border: 1px solid cornflowerblue;
+    height: 30px;
+    width: 200px;
+    border-radius: 3px;
+    outline: none;
+    font-size: 16px;
+}
+
+.call>input[type="text"]:focus {
+    box-shadow: 0 0 5px cornflowerblue;
+}
+
+.call>.mima {
+    vertical-align: -2px;
+}
+
+.log_reg {
+    float: right;
+}
+
+.call:last-child {
+    text-align: center;
+}
+
+.call button {
+    outline: none;
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+}
