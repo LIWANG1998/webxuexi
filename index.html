@@ -10,9 +10,21 @@
 
 <body>
     <script>
-        let i = 0;
-        console.log(i);
-        let ma = "ss";
+        let str = "aaaaabaaaacaaadaaeaaaa";
+        function tihan(strs, pre) {
+            let fg = new RegExp(`(${pre}+)`);
+            let a = strs.split(fg);
+            a.forEach((el, index) => {
+                if (el.indexOf('a') != -1) {
+                    a[index] = 'e' + el.slice(1);
+                }
+                return el;
+            });
+            console.log(a);
+            return a.join('');
+        }
+        let e = tihan(str, 'a');
+        console.log(e);
     </script>
 </body>
 
